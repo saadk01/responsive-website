@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <meta charset="utf-8">
+        <!--
+        DSGN 240: Mobile & Responsive Design
+        Final Assignment
+        Submission Date 19-OCT-2015
+        Student: Saad Khalid 000711549
+
+        All textual content is from the student.
+        All images are licensed Creative Commons
+        Only free services are used to create this project:
+        Dropbox (http://dropbox.com/) - To host remote images
+        https://iconverticons.com/online/ - To convert images to icons
+        http://picresize.com/ - To resize images
+        Nivo Slider (https://dev7studios.com/) - For image slider on large displays
+        jQuery (http://jquery.com/) - For Nivo Slider
+        Flickr (http://flickr.com/) - For images (individual image sources are provided besides each image whether in HTML or CSS files)
+        Google Images (http://images.google.com/)- To search for images
+        Stack Overflow (http://stackoverflow.com/) - For guidance
+        https://validator.w3.org/nu/#file - For page validation
+        Google Maps (http://maps.google.ca/) - For the embedded map
+        Youtube (http://youtube.com/) - For embedded videos
+
+        The logos of Facebook, Google+, Twitter (used for embedded logo images in footer (dummy social network buttons) are properties of the 
+        respective companies. Images used are creative commons.
+        -->
+        <title>The Golden String - Home</title>
+        <!-- 
+        Icon from: https://commons.wikimedia.org/wiki/File:Music_note.png. License: Creative Commons 
+        Icon generator: http://www.favicon-generator.org/
+        -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="nivo-slider.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine%7CSigmar+One%7CRaleway">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+        <script src="jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <div class="header">
+            <a href="index.html"><img title="The Golden String" alt="logo" src="logo.png" /></a>&nbsp;
+            <nav role="navigation">
+                <a href="#">&#9776; Menu</a>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About Us</a>
+            </nav>
+            <div class="clear"></div>
+            <div class="separator"></div>
+        </div>
+        
+        <div class="content">
+            <!-- 
+            Image Slider: Nivo Slider by Dev7studios (https://dev7studios.com/). License: MIT
+            Changed the file nivo-slider.css to customize images to be responsive.
+            Slider Images: Flickr. License: Creative Commons
+            URLs:
+            https://www.flickr.com/photos/davidrobertwright/3134093433/
+            https://www.flickr.com/photos/booleansplit/10317596324
+            https://www.flickr.com/photos/wwworks/2566174938/
+            https://www.flickr.com/photos/jeanfrancoishayeur/9333901805/
+            
+            These images are hosted on my personal Dropbox public folder to save on the page size. This will also help in
+            real-life environment when server won't have to load all images.
+            Image Resizing Courtesy: http://picresize.com/
+            -->
+            <div class="slider-wrapper theme-default">
+                <div class="ribbon"></div>
+                <div id="slider" class="nivoSlider">
+                    <img src="https://dl.dropboxusercontent.com/u/18247923/guitars.jpg"
+                         alt="A little of our guitar collection" class="slider_images"
+                         title="You dream of strings; realize those dreams here." />
+                    <img src="https://dl.dropboxusercontent.com/u/18247923/instruments.jpg"
+                         alt="Largest instruments collection in the city" class="slider_images" 
+                         title="Guitars or any other instrument, we got you covered." />
+                    <img src="https://dl.dropboxusercontent.com/u/18247923/guitar_lessons.jpg"
+                         alt="We offer guitar lessons" class="slider_images"
+                         title="We offer in-person music lessons with professional teachers." />
+                    <img src="https://dl.dropboxusercontent.com/u/18247923/record_collection.jpg"
+                         alt="Extensive record collection as well" class="slider_images"
+                         title="A music buff? Visit our extensive record collection and find your favorite artists."/>
+                </div>
+            </div>
+            
+            <h1>Welcome to The <span class="golden">Golden</span> String</h1>
+            
+            <p>The <span class="golden">Golden</span> String is your one-stop shop for everything that's music. If you play an instrument, a perfect instrument is waiting
+                for you at our instrument section. If you aspire to play an instrument, our professional teachers will be happy to assist you in one-to-one lessons. If you
+                are a seasoned music lover, visit our extensive record collection and you won't be disappointed.
+                
+            <p>Visit various sections of our website to see more details and give us a <a href="contact.html">shout</a>; we'd love to hear from you.
+        </div>
+        
+        <div class="separator"></div>
+        <div class="footer">
+            &#169; 2015 <span class="logo_name">The <span class="golden">Golden</span> String</span> <span class="logo_adjective">Music Shop</span><br/>
+            All rights reserved<br/>
+            <img src="facebook.png" alt="Facebook" title="Like us on Facebook" />&nbsp;
+            <!-- Source: https://upload.wikimedia.org/wikipedia/commons/4/4d/Farm-Fresh_facebook.png -->
+            <img src="twitter.png" alt="Twitter" title="Follow us on Twitter" />&nbsp;
+            <!-- Source: https://upload.wikimedia.org/wikipedia/commons/c/c8/Farm-Fresh_twitter_1.png -->
+            <img src="google+.png" alt="Google+" title="+1 us on Google+" />&nbsp;
+            <!-- Source: https://upload.wikimedia.org/wikipedia/commons/b/ba/Google_plus_32.png -->    
+            <a href="mailto:saadkhalid@gmail.com?Subject=Hello" target="_top"><img src="email.png" alt="Email" title="Send us an email" /></a>&nbsp;
+            <!-- Source: https://commons.wikimedia.org/wiki/File:Tokyoship_Mail_icon.svg -->   
+            <a href="sms://+14037034405"><img src="sms.png" alt="SMS" title="Send us a text message" /></a>&nbsp;
+            <!-- Source: Created with MS Paint -->
+            <a href="tel:+14037034405"><img src="call.png" alt="Call" title="Give us a call" /></a>
+            <!-- Source: https://pixabay.com/en/phone-telephone-communication-talk-99276/ -->
+        </div>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#slider').nivoSlider({
+                    effect: 'fade',
+                    pauseTime: 4000
+                });
+            });
+        </script>
+    </body>
+</html>

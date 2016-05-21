@@ -1,0 +1,229 @@
+/* 1) GENERIC STYLES */
+body {
+    margin: 0 auto;
+    padding: 20px;
+    color: #000;
+    background: #fff;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-size: 100%;
+    line-height: 2;
+    max-width: 800px;
+}
+
+h1 {
+    margin: 0;
+    line-height: 2;
+}
+
+p {
+    margin-top: 0;
+    text-align: justify;
+}
+
+a {
+    color: black;
+}
+
+/* 1-A) Header and menu styles */
+.header {
+    max-width: 700px;
+}
+
+.separator { /* Courtesy: http://jsfiddle.net/ZTz7Q/ */
+    margin: 25px 0;
+    height: 1px;
+    background: #777;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, #777));
+}
+
+@media screen and (max-width: 720px) {
+    .separator {display: none;}
+}
+
+nav {
+    padding: 1.1rem 0;
+    float: right;
+}
+
+nav a {
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 720px) {
+    nav{float: left;}
+}
+
+nav a:first-child {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        padding: 0;
+        height: 5rem;
+        overflow: hidden; /* Hides the menu list */
+        transition: 0.5s height ease-in-out;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.8rem;
+    }
+
+    nav a:first-child {
+        display: block;
+    }
+
+    nav:hover, nav:focus {height: 21rem}
+}
+
+.clear {
+    clear: both;
+}
+
+/* 1-B) Body styles */
+.content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Raleway', 'Arial', sans-serif;
+}
+
+@media screen and (max-width: 680px) { /* Hide Nivo Slider */
+    .slider-wrapper {display: none}
+    .theme-default {display: none}
+}
+
+.golden {
+    color: darkgoldenrod;
+}
+
+.logo_name {
+    font-family: 'Sigmar One', 'Arial', sans-serif;
+}
+
+.logo_adjective {
+    font-family: 'Tangerine', 'Arial', sans-serif;
+    font-size: 18px;
+}
+
+
+/* 1-C) Footer styles */
+.footer {
+    text-align: center;
+}
+
+.footer img {
+    cursor: pointer; 
+    width: 32px; 
+    height: 32px;
+}
+
+/* 2) SERVICES PAGE */
+.services_left_side_content {
+    float: left;
+    padding-right: 10px;
+    width: 60%;
+}
+
+.services_right_side_content {
+    float: right;
+    font-style: italic;
+    font-size: 80%;
+}
+
+.services_right_side_content img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+
+@media screen and (max-width: 740px) {
+    .services_right_side_content {display: none}
+    .services_left_side_content {width: 100%; padding-right: 0}
+}
+
+/* 3) CONTACT PAGE */
+.contact_left_side_content {
+    float: left;
+    padding-right: 5px;
+    width: 25%;
+}
+
+.contact_right_side_content {
+    position: relative;
+    padding-bottom: 55%;
+    height: 0;
+    overflow: hidden;
+    float: right;
+    padding-left: 5px;
+    width: 70%;
+}
+
+.contact_right_side_content iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .contact_right_side_content {float: left; width: 100%; padding-right: 0;}
+    .contact_left_side_content {margin-top: 10px; float: left; width: 100%;}
+}
+
+textarea { /* Courtesy: http://davidwalsh.name/textarea-width */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 25%;
+}
+
+/* 4) RESOURCES PAGE */
+.resources_video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.resources_video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.no_print_message {
+    display: none;
+}
+
+/* 5) ABOUT PAGE */
+.about_area {
+    /* Image source: https://www.flickr.com/photos/ztm/9957144705/ */
+    padding-bottom: 67%;
+    background-image: url(https://dl.dropboxusercontent.com/u/18247923/musical_note.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Raleway', 'Arial', sans-serif;
+}
+
+/* 6) PRINT QUERY */
+@media print {
+    nav {display: none}
+    .slider-wrapper {display: none}
+    .theme-default {display: none}
+    .separator {display: none}
+    .services_right_side_content {display: none}
+    .services_left_side_content {width: 100%; padding-right: 0}
+    .contact_form {display: none}
+    .resources_material {display: none}
+    .no_print_message {display: block}
+}
